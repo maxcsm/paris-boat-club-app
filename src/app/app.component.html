@@ -1,0 +1,51 @@
+<ion-app color="secondary">
+  <ion-split-pane contentId="main-content">
+    <ion-menu type="overlay" menuId="menu1" contentId="main-content" >
+      <ion-content >
+        <ion-list id="inbox-list" style="background-color: #0e4173;height: 100%;">
+    
+          <img  src="../assets/icon/logo.png" style="width: 100px;text-align:center;margin-left:30%; margin-top:6%;" >
+
+          <ion-menu-toggle auto-hide="false" id="menu1" *ngFor="let p of appClient; let i = index" >
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected" color="primary">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'" > </ion-icon>
+              <ion-label style="size:16px;">{{ p.title | translate }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-item routerDirection="root" lines="none" detail="false" color="primary" (click)="share()" >
+            <ion-icon slot="start"  name="share-social-outline"></ion-icon>
+            <ion-label style="size:16px;">{{ "share" | translate }}</ion-label>
+          </ion-item>
+
+          <ion-item  routerDirection="root" lines="none" detail="false" color="primary" href="https://play.google.com/store/apps/details?id=com.parisboatclub&hl=fr" >
+            <ion-icon slot="start"  name="star-outline"></ion-icon>
+            <ion-label style="size:16px;">{{ "note" | translate }}</ion-label>
+          </ion-item>
+
+
+
+
+
+
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <!---
+    <ion-item  routerDirection="root" lines="none" detail="false" color="primary" href="https://apps.apple.com/fr/app/parisboatclub/id6499426319?platform=iphone" >
+            <ion-icon slot="start"  name="star-outline"></ion-icon>
+            <ion-label style="size:16px;">{{ "note" | translate }}</ion-label>
+          </ion-item>
+
+   
+ 
+
+ -->
+
+
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+
+  </ion-split-pane>
+
+  
+</ion-app>

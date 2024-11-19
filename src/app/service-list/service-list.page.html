@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+    <ion-title >ParisBoatClub </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content >
+  <ion-row justify-content-center>
+    <ion-col size-md="3" size-lg="3" size-xs="12">
+    </ion-col>
+
+        <ion-col sizeLg="6" sizeMd="6" sizeXs="12" >
+
+
+
+          <ion-accordion-group  color="secondary">
+            <ion-accordion value="1">
+              <ion-item slot="header" color="secondary">
+                <ion-label style="padding: 5%;font-size: 20px;"> <ion-icon name="wifi-outline"></ion-icon> Wifi </ion-label>
+              </ion-item>
+              <div class="ion-padding" color="secondary" slot="content"> {{ "wifi_content" | translate }}  <img src="../assets/service7.jpg"alt=""> </div>
+            </ion-accordion>
+            <ion-accordion value="2">
+              <ion-item slot="header" color="secondary">
+                <ion-label style="padding: 5%;font-size: 20px;"><ion-icon name="musical-note-outline"></ion-icon> {{ "music_title" | translate }}</ion-label>
+              </ion-item>
+              <div class="ion-padding" color="secondary" slot="content"> {{ "music_content" | translate }} <img src="../assets/service8.jpg"alt=""></div>
+            </ion-accordion>
+            <ion-accordion value="3">
+              <ion-item slot="header" color="secondary">
+                <ion-label style="padding: 5%;font-size: 20px;"><ion-icon name="medkit-outline"></ion-icon> {{ "security_title" | translate }}</ion-label>
+              </ion-item>
+              <div class="ion-padding" color="secondary" slot="content"> {{ "security_content" | translate }} <img src="../assets/service5.jpg"alt=""> </div>
+            </ion-accordion>
+            <ion-accordion value="4">
+              <ion-item slot="header" color="secondary">
+                <ion-label style="padding: 5%;font-size: 20px;"><ion-icon name="chatbubble-ellipses-outline"></ion-icon> {{ "comment_title" | translate }} </ion-label>
+              </ion-item>
+              <div class="ion-padding" color="secondary" slot="content"> {{ "comment_content" | translate }} <img src="../assets/service6.jpg"alt=""></div>
+            </ion-accordion>
+            <ion-accordion value="5">
+              <ion-item slot="header" color="secondary">
+                <ion-label style="padding: 5%;font-size: 20px;"> <ion-icon name="cafe-outline"></ion-icon> {{ "frigo_title" | translate }} </ion-label>
+              </ion-item>
+              <div class="ion-padding" color="secondary" slot="content"> {{ "frigo_content" | translate }} <img src="../assets/service4.jpg"alt=""> </div>
+            </ion-accordion>
+            <ion-accordion value="6">
+              <ion-item slot="header" color="secondary">
+                <ion-label style="padding: 5%;font-size: 20px;"><ion-icon name="videocam-outline"></ion-icon> {{ "video_title" | translate }} </ion-label>
+              </ion-item>
+              <div class="ion-padding" color="secondary" slot="content"> {{ "video_content" | translate }} <img src="../assets/service3.jpg"alt=""> </div>
+            </ion-accordion>
+            <ion-accordion value="7">
+              <ion-item slot="header" color="secondary">
+                <ion-label style="padding: 5%;font-size: 20px;"><ion-icon name="briefcase-outline"></ion-icon> {{ "luggage_title" | translate }} </ion-label>
+              </ion-item>
+              <div class="ion-padding" color="secondary" slot="content"> {{ "luggage_content" | translate }}  <img src="../assets/service1.jpg"alt=""> </div>
+            </ion-accordion>
+            <ion-accordion value="8">
+              <ion-item slot="header" color="secondary">
+                <ion-label style="padding: 5%;font-size: 20px;"> <ion-icon name="accessibility-outline"></ion-icon> {{ "toilettes_title" | translate }} </ion-label>
+              </ion-item>
+              <div class="ion-padding" color="secondary" slot="content">      {{ "toilettes_content" | translate }}  <img src="../assets/service2.jpg"alt=""></div>
+            </ion-accordion>
+
+      
+          </ion-accordion-group>
+
+        </ion-col>
+
+    
+    <ion-col size-md="3" size-lg="3" size-xs="12">
+    </ion-col>
+  </ion-row>
+</ion-content>

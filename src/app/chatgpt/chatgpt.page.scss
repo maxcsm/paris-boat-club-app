@@ -1,0 +1,15 @@
+.roundedInput  {
+           
+    --border-color: gray;
+    --border-radius: 5px;
+    --border-width: 2px;
+    --box-shadow: 2px gray;
+    --highlight-height: 0;
+    --background: #f8f9fa;
+    padding:2%;
+    height: 100px;
+   }
+
+   ion-boutton{
+    text-transform: capitalize;
+}

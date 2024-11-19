@@ -1,0 +1,115 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+    <ion-title >ParisBoatClub </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content responsive-sm  class="ion-padding" >
+  <ion-grid>
+    <ion-row class="padding">
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+    </ion-col>
+
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" style="border: 2px;border-width: 2px; text-align: center;"  >
+       <!-- Logo -->
+       <img  src="../assets/icon/logo.png" style="width: 150px;text-align: center;text-transform : capitalize;"  >
+       <h1 color="primary"> {{ "textintro" | translate }} </h1>
+
+       <ion-button icon-left size="primary" expand="full" shape="round" (click)="goMap()"  tappable  style="text-align: center;text-transform : capitalize;" >
+        {{ "tovisit" | translate }}
+        </ion-button>
+
+    
+        <ion-card style="margin-top:2%;"   (click)="changelg()" >
+          <ion-card-header>
+            <div style="text-align: center;" *ngIf="language!=='it'&& language!=='fr'&& language!=='en'&& language!=='es'">
+              <div style="text-align: center;">
+              <img src="../assets/france.png"alt="" style="width: 40px; text-align: center;" >         
+              <img src="../assets/royaume-uni.png"alt="" style="width: 40px; text-align: center;">     
+              <img src="../assets/italie.png"alt="" style="width: 40px; text-align: center;"> 
+              <img src="../assets/espagne.png"alt="" style="width: 40px; text-align: center;">     
+            </div>
+              </div>
+            <ion-card-subtitle color="secondary">
+              <ion-row style="text-align: center;">
+              
+                <div style="text-align: center;padding-left: 40%;" *ngIf="language=='fr'">
+                <img src="../assets/france.png"alt="" style="width: 40px;">         <b >  {{ "french" | translate }}</b>
+                </div>
+                <div style="text-align: center;padding-left: 40%;" *ngIf="language=='en'">
+                  <img src="../assets/royaume-uni.png" alt="" style="width: 40px;">         <b >  {{ "english" | translate }}</b>
+                  </div>
+
+                  <div style="text-align: center;padding-left: 40%;" *ngIf="language=='it'">
+                    <img src="../assets/italie.png"alt="" style="width: 40px;">         <b >  {{ "italian" | translate }}</b>
+                    </div>
+
+                    <div style="text-align: center;padding-left: 40%;" *ngIf="language=='es'">
+                      <img src="../assets/espagne.png"alt="" style="width: 40px;">         <b >  {{ "spanish" | translate }}</b>
+                      </div>
+              </ion-row>
+ 
+            </ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+        <swiper-container
+        (slidechange)="swiperSlideChanged($event)"
+        [slidesPerView]="1"
+        [spaceBetween]="10"
+        [autoplay]="{
+          delay: 1800,
+          disableOnInteraction: false
+        }"
+        [loop]="true"
+      >
+        <swiper-slide >  <img src="../assets/icon/slide1.png" alt="" (click)="gomodeemploi()" > </swiper-slide>
+        <swiper-slide>  <img src="../assets/icon/slide3.png" alt=""  (click)="gomodeemploi()"> </swiper-slide>
+        <swiper-slide>  <img src="../assets/icon/slide4.png" alt=""  (click)="gomodeemploi()"> </swiper-slide>
+        <swiper-slide>  <img src="../assets/icon/slide2.png" alt=""  (click)="gomodeemploi()"> </swiper-slide>
+      </swiper-container>
+
+  
+      <h1 color="secondary"> {{ "textintro3" | translate }} </h1>
+
+        <div style="margin-top:5%;">
+              <img src="../assets/home2.jpg"alt="">
+        </div>
+        <div style="margin-top:5%;">
+              <img src="../assets/home1.jpg"alt="">
+        </div>
+   
+        <div style="margin-top:5%;">
+              <img src="../assets/home3.jpg"alt="">
+        </div>
+  
+        <h1 color="secondary"> {{ "textintro2" | translate }} </h1>
+    </ion-col>
+
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+   </ion-col>
+  </ion-row>
+</ion-grid>
+
+</ion-content>
+
+
+<ion-modal [isOpen]="isModalOpen">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Modal</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="setOpen(false)">Close</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+       Your content
+    </ion-content>
+  </ng-template>
+</ion-modal>

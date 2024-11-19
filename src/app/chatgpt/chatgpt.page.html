@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+
+    <ion-buttons slot="start">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+  
+    <ion-title>ParisBoatClub</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+
+
+ <h1> {{ "askquestion" | translate }} </h1>
+
+  <ion-textarea type="text"autoGrow="true" [(ngModel)]="userInput" class="roundedInput" placeholder="{{ 'placequestion' | translate }}"></ion-textarea>
+  <ion-button icon-left size="primary" expand="full" shape="round" (click)="sendMessage()"  tappable  style="padding-top: 20%;text-transform: capitalize;">
+    {{ "next" | translate }}
+    </ion-button>
+
+
+
+  <ion-card *ngIf="response"   >
+    <ion-card-header>
+      <ion-card-title>Réponse :</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="color:black;">{{ response }}</ion-card-content>
+  </ion-card>
+</ion-content>  

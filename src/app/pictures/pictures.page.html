@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-menu-button ></ion-menu-button>
+    </ion-buttons>
+    <ion-title >ParisBoatClub </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content >
+  <ion-row justify-content-center>
+    <ion-col size-md="3" size-lg="3" size-xs="12">
+    </ion-col>
+
+        <ion-col sizeLg="6" sizeMd="6" sizeXs="12" >
+          <ion-list style="border: 2px;border-width: 2px; text-align: center;" >
+            <h1 color="primary">  {{ "pictures" | translate }}</h1>
+           
+            <ion-item button *ngFor="let item of posts" lines="none">
+      
+        
+                <img  src="{{UrlImage}}{{item}}"  *ngIf="item" >
+          
+     
+          
+            </ion-item>
+          </ion-list>
+          <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+            <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Chargement..."> </ion-infinite-scroll-content>
+          </ion-infinite-scroll>
+        
+        </ion-col>
+
+    
+    <ion-col size-md="3" size-lg="3" size-xs="12">
+    </ion-col>
+  </ion-row>
+</ion-content>

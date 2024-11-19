@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>{{ "chooselanguage" | translate }} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list >
+    <ion-item button (click)="select1()">
+       <ion-label>
+        <img src="../assets/france.png"alt="" style="width: 40px;margin-top: 15px;">
+      </ion-label>
+      <ion-label>
+        <b>  {{ "french" | translate }}</b><br>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button (click)="select2()">
+      <ion-label>
+       <img src="../assets/royaume-uni.png"alt="" style="width: 40px;margin-top: 15px;">
+     </ion-label>
+     <ion-label>
+       <b>  {{ "english" | translate }}</b><br>
+     </ion-label>
+   </ion-item>
+
+
+   <ion-item button (click)="select3()">
+    <ion-label>
+     <img src="../assets/italie.png"alt="" style="width: 40px;margin-top: 15px;">
+   </ion-label>
+   <ion-label>
+     <b>  {{ "italian" | translate }}</b><br>
+   </ion-label>
+ </ion-item>
+
+
+
+ <ion-item button (click)="select4()">
+  <ion-label>
+   <img src="../assets/espagne.png"alt="" style="width: 40px;margin-top: 15px;">
+ </ion-label>
+ <ion-label>
+   <b>  {{ "spanish" | translate }}</b><br>
+ </ion-label>
+</ion-item>
+  </ion-list>
+
+
+
+</ion-content>

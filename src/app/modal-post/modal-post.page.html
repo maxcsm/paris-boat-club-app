@@ -1,0 +1,57 @@
+
+
+<ion-content class="padding">
+
+  <ion-item>
+    {{title}}
+    <div class="item-note" slot="end">
+   
+      <ion-button color="success" color="secondary" (click)="closeModal()"  >{{ "close" | translate }}  </ion-button>
+    </div>
+  </ion-item>
+
+
+  <ion-row >
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+    </ion-col>
+
+    <ion-col sizeLg="6" sizeMd="6" sizeXs="12" style="border: 2px;border-width: 2px; text-align: center;"  >
+      <ion-list >
+        <img  src="{{UrlImage}}{{image}}"  *ngIf="image" >
+        <b>  {{title}}</b>
+        <div  *ngIf="language=='fr'">  {{content}}</div><br>
+        <div  *ngIf="language=='en'">  {{content_en}}</div><br>
+        <div  *ngIf="language=='it'">  {{content_it}}</div><br>
+        <div  *ngIf="language=='es'">  {{content_es}}</div><br>
+        <div  *ngIf="language=='fr'"> 
+        <audio controls src="https://api.parisboatclub.blog/audio_fr/{{sound_fr}}"  *ngIf="sound_fr" ></audio>
+        </div>
+        <div  *ngIf="language=='en'"> 
+        <audio controls src="https://api.parisboatclub.blog/audio_en/{{sound_en}}" *ngIf="sound_en"></audio>
+        </div>
+        <div  *ngIf="language=='it'"> 
+        <audio controls src="https://api.parisboatclub.blog/audio_it/{{sound_it}}" *ngIf="sound_it"></audio>
+        </div>
+        <div  *ngIf="language=='es'"> 
+        <audio controls src="https://api.parisboatclub.blog/audio_es/{{sound_es}}" *ngIf="sound_es"></audio>
+        </div>
+        <div *ngIf="type==2">
+        <iframe width="100%" height="400px" frameBorder="0" [src]="iframe"  *ngIf="iframe!==''"></iframe>
+        </div>
+        <br>
+        <img  src="{{UrlImage}}{{image2}}"  *ngIf="image2" >
+        <img  src="{{UrlImage}}{{image3}}"  *ngIf="image3" >
+        <img  src="{{UrlImage}}{{image4}}"  *ngIf="image4" >
+
+     
+    </ion-list>
+
+    </ion-col>
+    <ion-col sizeLg="3" sizeMd="3" sizeXs="0"  >
+    </ion-col>
+
+  </ion-row >
+  
+       
+      
+</ion-content>
