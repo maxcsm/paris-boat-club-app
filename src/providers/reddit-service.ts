@@ -143,9 +143,7 @@ export class RedditService {
   }
   
  
-  public uploadFormData(formData: any) {
-    return this.http.post<any>('https://api.alpes-solutech.fr/api/upload', formData);
-  }
+
 
   getGeocode(text: string): Observable<any> {
     return this.http
