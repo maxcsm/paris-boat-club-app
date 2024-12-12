@@ -153,7 +153,11 @@ export class RedditService {
       .pipe(retry(2),catchError(this.handleError))
   }
   
-
+  getMessagesBythread(thread: string): Observable<any> {
+    return this.http
+      .get<any>(this.URLbase+'public_chatgpt/'+thread)
+      .pipe(retry(2),catchError(this.handleError))
+  }
 
   getUrlBase() {
     return this.URLbase;

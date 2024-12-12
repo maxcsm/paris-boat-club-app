@@ -16,16 +16,16 @@
     "boat": "Bateau",
     "legal":"Mentions légales",
     "modeemploi":"Mode d'emploi",
-    "modeemploi1":"Choisissez votre langue (mettre l’icone Langues)",
-    "modeemploi2":"Cliquez sur Visiter (mettre l'icône Visiter)",
-    "modeemploi3":"Choisir votre point d'intérêts pour afficher sa description (mettre l'icône de la carte indiquant chaque Point d'Intérêts)",
-    "modeemploi4":"Voir la liste de tous les points d'intérêts (mettre l'icône Liste)",
-    "modeemploi5":"Revenez sur la page d'accueil en cliquant sur l'icône en bas à gauche (mettre l'icône Accueil",
-    "modeemploi6":"A chaque moment retournez au Menu Principal en cliquant sur l'icône en haut à gauche (mettre l'icône Menu)",
+    "modeemploi1":"Choisissez votre langue ",
+    "modeemploi2":"Cliquez sur Visiter ",
+    "modeemploi3":"Choisir votre point d'intérêts pour afficher sa description ",
+    "modeemploi4":"Voir la liste de tous les points d'intérêts ",
+    "modeemploi5":"Revenez sur la page d'accueil en cliquant sur l'icône en bas à gauche ",
+    "modeemploi6":"A chaque moment retournez au Menu Principal en cliquant sur l'icône en haut à gauche ",
 
     "textintro": "Bienvenue à bord du bateau",
     "textintro2": "Venez découvrir Paris depuis la Seine pour des moments mémorables et uniques !",
-    "textintro3": "Croisière privée sur la Seine à Paris",
+    "textintro3": "Croisière privée à Paris",
     
     "music_title":"Musique à volonté",
     "security_title": "Sécurité",
@@ -86,5 +86,9 @@
     "shop":"La Boutique ParisBoatClub",
     "pictures":"Photos ParisBoatClub",
 
-    "intro_escales":"Il est possible d'embarquer ou de débarquer depuis l'une de ces Escales uniquement sur réservation. Depuis les Escales de Beaugrenelle, Escale du Louvre et Escale Henri IV, il n'est pas nécessaire de réserver l’arrêt et l'amarrage du bateau."
+    "intro_escales":"Il est possible d’embarquer ou de débarquer depuis l’une de ces Escales, uniquement sur demande lors de la réservation.",
+
+    "geomap": "Souhaitez-vous géolocaliser votre position ?",
+"yes": "Oui",
+"no": "Non"
     }

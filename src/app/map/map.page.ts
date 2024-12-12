@@ -8,6 +8,7 @@ import { Geolocation } from '@capacitor/geolocation';
 import { RedditService } from 'src/providers/reddit-service';
 import { ModalPostPage } from '../modal-post/modal-post.page';
 import * as Leaflet from 'leaflet';
+import { TranslateConfigService } from 'src/providers/translate-config.service';
 
 @Component({
   selector: 'app-map',
@@ -49,6 +50,7 @@ export class MapPage  implements AfterViewInit {
   modelData: any;
   idetail: any;
   markers: any;
+  language: any;
 
 
 
@@ -61,21 +63,28 @@ export class MapPage  implements AfterViewInit {
     private router: Router,  
     public modalController: ModalController,   
     private loadingCtrl: LoadingController,
-    public loadingController:LoadingController ) {
+    public loadingController:LoadingController,
+    private translateConfigService: TranslateConfigService ) {
+      this.language=this.translateConfigService.getCurrentLang();
+      console.log(this.language);
     this.page=1;
   }
 
   ngAfterViewInit() {
+   // this.getPositionNew(); 
     this.initializeMap();
+    setTimeout(() => { 
+      this.setOpen(true);
+     }, 2000); 
+
   }
 
+  isModalOpen = false;
 
-  ionViewWillEnter() {
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
    
-    }
-  
-  
-
     private async initializeMap() {
 console.log(this.map);
       if( this.map){
@@ -114,7 +123,7 @@ console.log(this.map);
     message: 'Recherche localisation',
     });
     loader.present();
-
+    this.setOpen(false);
   const coordinates = await Geolocation.getCurrentPosition();
   console.log('Current position:', coordinates);
   if(coordinates.coords.latitude!==null){
@@ -201,7 +210,7 @@ console.log(this.map);
     });
     console.log(value);
     const markPoint = Leaflet.marker([value.lat, value.lng],{icon: startIcon});
-    markPoint.bindPopup('<p>'+value.title+'</p>'+'<center><ion-button id="popup-button" > Voir  </ion-button>');
+    markPoint.bindPopup('<p>'+value.title+'</p>'+'<center><ion-button id="popup-button" ><ion-icon name="eye-outline"></ion-icon>  </ion-button>');
     this.map.addLayer(markPoint);
   /*  markPoint.on("click",  (e) => {
       console.log(e);
@@ -356,6 +365,16 @@ async  doUpdateAppointement() {
 }
 
 
+async presentModal() {
+  const modal = this.modalController.create({
+    component: "open-modal",
+    breakpoints: [0, 0.3, 0.5, 0.8],
+    initialBreakpoint: 0.5
+  });
+  await (await modal).present();
 
+
+  
+}
 
 }

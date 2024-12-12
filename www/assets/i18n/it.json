@@ -18,16 +18,16 @@
  "boat": "Barca",
  "legal":"Avvisi legali",
 "modeemploi":"Come usare",
- "modeemploi1":"Scegli la tua lingua (metti l'icona Lingue)",
- "modeemploi2":"Fai clic su Visita (metti l'icona Visita)",
- "modeemploi3":"Scegli il tuo punto di interesse per visualizzarne la descrizione (metti l'icona sulla mappa che indica ciascun Punto di Interesse)",
- "modeemploi4":"Vedi l'elenco di tutti i punti di interesse (metti l'icona Elenco)",
- "modeemploi5":"Torna alla home page cliccando sull'icona in basso a sinistra (metti l'icona Home)",
- "modeemploi6":"Torna in qualsiasi momento al Menu Principale cliccando sull'icona in alto a sinistra (metti l'icona Menu)",
+ "modeemploi1":"Scegli la tua lingua",
+ "modeemploi2":"Fai clic su Visita",
+ "modeemploi3":"Scegli il tuo punto di interesse per visualizzarne la descrizione ",
+ "modeemploi4":"Vedi l'elenco di tutti i punti di interesse ",
+ "modeemploi5":"Torna alla home page cliccando sull'icona in basso a sinistra ",
+ "modeemploi6":"Torna in qualsiasi momento al Menu Principale cliccando sull'icona in alto a sinistra ",
 
  "textintro": "Benvenuto a bordo",
 "textintro2": "Venite a scoprire Parigi dalla Senna per momenti indimenticabili e unici!",
-"textintro3": "Crociera privata sulla Senna a Parigi",
+"textintro3": "Crociera privata a Parigi",
 
  "music_title":"Musica a volontà",
  "security_title": "Sicurezza",
@@ -90,5 +90,9 @@
   "shop":"Il negozio ParisBoatClub",
   "pictures":"Immagini ParisBoatClub",
 
-  "intro_escales":"È possibile imbarcarsi o sbarcare da uno di questi scali solo su prenotazione. Dagli scali Beaugrenelle, Scalo du Louvre e Scalo Henri IV, non è necessario prenotare la sosta e l'ormeggio della barca."
+  "intro_escales":"È possibile imbarcarsi o sbarcare da uno di questi Scali, solo su richiesta al momento della prenotazione.",
+
+  "geomap":"Vuoi geolocalizzare la tua posizione?",
+"yes":"Sì",
+"no":"No"
  }

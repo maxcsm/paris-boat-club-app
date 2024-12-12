@@ -15,16 +15,16 @@
     "boat": "Boat",
     "legal":"Legal notices",
 "modeemploi":"Instructions",
-"modeemploi1":"Choose your language (put the Languages ​​icon)",
-"modeemploi2":"Click on Visit (put the Visit icon)",
-"modeemploi3":"Choose your point of interest to display its description (put the map icon indicating each Point of Interest)",
-"modeemploi4":"See the list of all points of interest (put the List icon)",
-"modeemploi5":"Return to the home page by clicking on the icon at the bottom left (put the Home icon)",
-"modeemploi6":"At any time return to the Main Menu by clicking on the icon at the top left (put the Menu icon)",
+"modeemploi1":"Choose your language ",
+"modeemploi2":"Click on Visit ",
+"modeemploi3":"Choose your point of interest to display its description ",
+"modeemploi4":"See the list of all points of interest ",
+"modeemploi5":"Return to the home page by clicking on the icon at the bottom left ",
+"modeemploi6":"At any time return to the Main Menu by clicking on the icon at the top left",
 
     "textintro": "Welcome aboard",
     "textintro2": "Come and discover Paris from the Seine for memorable and unique moments", 
-    "textintro3": "Private cruise on the Seine in Paris",
+    "textintro3": "Private cruise in Paris",
 
 
     "music_title":"Music at will",
@@ -86,6 +86,10 @@
 
     "shop":"The Shop ParisBoatClub",
     "pictures":"Pictures ParisBoatClub",
-   "intro_escales":"It is possible to embark or disembark from one of these Stopovers only by reservation. From the Stopovers of Beaugrenelle, Escale du Louvre and Escale Henri IV, it is not necessary to reserve the stop and mooring of the boat."
-   
+
+    "intro_escales":"It is possible to embark or disembark from one of these Stopovers, only on request when booking.", 
+
+    "geomap":"Would you like to geolocate your position ?",
+    "yes":"Yes",
+    "no":"No"
     }

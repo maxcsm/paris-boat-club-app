@@ -7,3 +7,29 @@
   bottom: 90px;
   right: 15;
 }
+
+audio {
+  width: 110px;
+  height: 50px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  display: none !important;
+}
+
+audio::-webkit-media-controls-timeline-container {
+  display: none !important;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  display: none !important;
+}
+
+audio::-webkit-media-controls-timeline {
+  display: none !important;
+}
+
+audio::-webkit-media-controls-panel {
+  padding: 0 0 0 1px;
+  justify-content: center; /*control panel elements are flex positioned*/
+}

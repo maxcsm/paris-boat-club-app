@@ -17,16 +17,16 @@
     "boat": "Barco",
     "legal":"Avisos legales",
 "modeemploi":"Cómo utilizar",
- "modeemploi1":"Elige tu idioma (pon el ícono de Idiomas)",
- "modeemploi2":"Haga clic en Visitar (ponga el ícono Visitar)",
- "modeemploi3":"Elige tu punto de interés para mostrar su descripción (pon el icono del mapa indicando cada Punto de Interés)",
- "modeemploi4":"Ver la lista de todos los puntos de interés (poner el icono de Lista)",
- "modeemploi5":"Regrese a la página de inicio haciendo clic en el ícono en la parte inferior izquierda (ponga el ícono de Inicio)",
- "modeemploi6":"En cualquier momento regrese al Menú Principal haciendo clic en el ícono en la parte superior izquierda (ponga el ícono de Menú)",
+ "modeemploi1":"Elige tu idioma ",
+ "modeemploi2":"Haga clic en Visitar ",
+ "modeemploi3":"Elige tu punto de interés para mostrar su descripción ",
+ "modeemploi4":"Ver la lista de todos los puntos de interés ",
+ "modeemploi5":"Regrese a la página de inicio haciendo clic en el ícono en la parte inferior izquierda ",
+ "modeemploi6":"En cualquier momento regrese al Menú Principal haciendo clic en el ícono en la parte superior izquierda ",
 
     "textintro": "Bienvenido a bordo del barco",
     "textintro2": "Ven a descubrir París desde el Sena para vivir momentos memorables y únicos",
-"textintro3": "Crucero privado por el Sena en París",
+"textintro3": "Crucero privado en París",
 
 
  "music_title":"Tanta música como quieras",
@@ -88,5 +88,9 @@
 
   "shop":"La tienda ParisBoatClub",
   "pictures":"Fotos ParisBoatClub",
-  "intro_escales":"Es posible embarcar o desembarcar en una de estas escalas únicamente con reserva. Desde las escalas de Beaugrenelle, escala del Louvre y escala Henri IV, no es necesario reservar la parada ni el amarre del barco."
+  "intro_escales":"Es posible embarcar o desembarcar en una de estas Escalas, sólo previa solicitud al realizar la reserva.",
+
+ "geomap": "¿Quieres geolocalizar tu posición?",
+  "yes": "Sí",
+"no": "No"  
 }
